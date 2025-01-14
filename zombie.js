@@ -1,4 +1,4 @@
-
+// hiaudcs
 class Zombie {
 	constructor(game, spritesheet, x, y, speed) {
 		this.game = game;
