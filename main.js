@@ -4,7 +4,7 @@ const gameEngine = new GameEngine();
 const ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload('./zombie1.png');
-ASSET_MANAGER.queueDownload('./walk.png');
+ASSET_MANAGER.queueDownload('./Walk.png');
 
 
 ASSET_MANAGER.downloadAll(() => {
@@ -14,7 +14,7 @@ ASSET_MANAGER.downloadAll(() => {
 
 	
     gameEngine.addEntity(new Zombie(gameEngine, ASSET_MANAGER.getAsset('./zombie1.png'), 0, 10, 40)); // Zombie 1
-    gameEngine.addEntity(new Zombie(gameEngine, ASSET_MANAGER.getAsset('./walk.png'), 0, 300, 40)); // Zombie 2
+    gameEngine.addEntity(new Zombie(gameEngine, ASSET_MANAGER.getAsset('./Walk.png'), 0, 300, 40)); // Zombie 2
 
 
 	gameEngine.init(ctx);
